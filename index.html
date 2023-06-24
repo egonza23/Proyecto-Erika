@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elifarma</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+    <script>
+        function menuItemClicked(event) {
+            event.preventDefault();
+            var menuItemText = event.target.textContent;
+            switch (menuItemText) {
+                case 'Inicio':
+                    window.location.href = 'index.html#inicio';
+                    break;
+                case 'Nosotros':
+                    window.location.href = 'index.html#nosotros';
+                    break;
+                case 'Medicamentos':
+                    window.location.href = 'index.html#medicamentos';
+                    break;
+                case 'Servicios':
+                    window.location.href = 'index.html#servicios';
+                    break;
+                case 'Contactos':
+                    window.location.href = 'paginas/contactos.html#contactos';
+                    break;
+                    case 'Blog':
+                    window.location.href = 'paginas/blog.html#blog';
+                    break;
+                    default:
+            }
+        }
+    </script>
+
+
+</head>
+
+<header>
+    <div id="logo">
+        <img src="Imagenes/logo-blanco.png" alt="logo" width="5%">
+    </div>
+    <div id="menu1">
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="menuItemClicked(event)">Inicio</a></li>
+                <li><a href="info-nosotros" onclick="menuItemClicked(event)">Nosotros</a></li>
+                <li><a href="content-medicamentos" onclick="menuItemClicked(event)">Medicamentos</a></li>
+                <li><a href="content-servicios" onclick="menuItemClicked(event)">Servicios</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu2">
+        <nav>
+            <ul>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="paginas/contactos.html" onclick="menuItemClicked(event)">Contactos</a></li>
+                <li><a href="#">Empleos</a></li>
+                <li><a href="paginas/blog.html" onclick="menuItemClicked(event)">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="banner">
+        <img src="Imagenes/banner2.png"  alt="banner" width="100%">
+    </div>
+
+
+</header>
+
+<body>
+
+    <div id="content-nosotros">
+
+        <div id="nosotros">
+            <h1>NOSOTROS</h1>
+        </div>
+        <div id="info-nosotros">
+            <div id="mision">
+                <H2>Misión</H2>
+                <p>Nuestra misión en Elifarma es proporcionar productos farmacéuticos
+                    de alta calidad y servicios de salud accesibles a la comunidad . Nos comprometemos a mejorar la
+                    calidad de
+                    vida de nuestros clientes ofreciendo una amplia gama de medicamentos, productos de
+                    cuidado personal y asesoramiento farmacéutico profesional.</p>
+            </div>
+
+            <div id="vision">
+                <H2>Visión</H2>
+                <p>Nuestra visión en Elifarma es convertirnos en la farmacia preferida
+                    de los Nicaraguenses y ser reconocidos como un líder confiable en la
+                    industria farmacéutica. Nos esforzamos por establecer una reputación basada
+                    en la excelencia en el servicio al cliente, la calidad de nuestros productos
+                    y la atención centrada en el bienestar integral de las personas.</p>
+
+            </div>
+
+            <div id="valores">
+                <h2>Valores</h2>
+                <p>Servicio
+                    Puntualidad<br>
+                    Respeto<br>
+                    Honestidad<br>
+                    Orden<br>
+                    Actitud positiva</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="content-medicamentos">
+
+        <div id="medicamentos">
+            <h1>MEDICAMENTOS</h1>
+        </div>
+        <ul class="button-list">
+            <li><a href="antibioticos.html" class="button">Antibioticos</a></li>
+            <li><a href="antipireticos.html" class="button">Antipireticos</a></li>
+            <li><a href="estomacales.html" class="button">Estomacales</a></li>
+            <li><a href="antialergicos.html" class="button">Antialergicos</a></li>
+            <li><a href="diabetes.html" class="button">Diabetes</a></li>
+            <li><a href="mrp.html" class="button">M.R.P</a></li>
+        </ul>
+    </div>
+    <div id="content-servicios">
+        <div id="servicios">
+            <h1>SERVICIOS</h1>
+        </div>
+        <div id="info-servicios">
+            <div id="presion">
+                <img src="Imagenes/presion.jpg" alt="Presion">
+                <h2>Toma de presión</h2>
+            </div>
+
+            <div id="azucar">
+                <img src="Imagenes/azucar.jpg" alt="glucosa">
+                <h2>Toma de glucosa</h2>
+            </div>
+
+            <div id="inyeccion">
+                <img src="Imagenes/inyeccion.png" alt="inyeccion">
+                <h2>Aplicación de medicamentos</h2>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<footer>
+    <div id="logo-footer">
+        <img src="Imagenes/logo-blanco.png" alt="logo" width="10%">
+    </div>
+    <div id="menu-footer">
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="menuItemClicked(event)">Inicio</a></li>
+                <li><a href="info-nosotros" onclick="menuItemClicked(event)">Nosotros</a></li>
+                <li><a href="content-medicamentos" onclick="menuItemClicked(event)">Medicamentos</a></li>
+                <li><a href="content-servicios" onclick="menuItemClicked(event)">Servicios</a></li>
+                <li><a href="../contactos.html" onclick="menuItemClicked(event)">Contactos</a></li>
+                <li><a href="#">Empleos</a></li>
+                <li><a href="../blog.html" onclick="menuItemClicked(event)">Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="iconos">
+        <nav>
+            <ul class="button-iconos">
+                <li><a href="../contactos.html"><img src="Imagenes/ubicacionblanco.png" class="button" 
+                            alt="ubicacion" width="20%"></a></li>
+                <li><a href="https://es-la.facebook.com/"><img src="Imagenes/relojblanco.png" class="button"
+                            alt="facebook" width="20%"></a></li>
+                <li><a href="../contactos.html"><img src="Imagenes/celblanco.png" class="button" alt="telefono"
+                            width="20%"></a></li>
+                <li><a href="https://es-la.facebook.com/"><img src="Imagenes/facebookblanco.png" class="button"
+                            alt="facebook" width="20%"></a></li>
+                <li><a href="https://twitter.com/?lang=es"><img src="Imagenes/twitterblanco.png" class="button"
+                            alt="twitter" width="20%"></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/"><img src="Imagenes/instablanco.png"
+                            class="button" alt="instagran" width="20%"></a></li>
+        </nav>
+        </ul>
+    </div>
+
+
+    <div id="autor">
+        <h3> ©Todos los derechos reservados 2023</h3>
+    </div>
+</footer>
+
+</html>

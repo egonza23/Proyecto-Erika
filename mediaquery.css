@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+
+    
+    #content-nosotros,
+    #content-medicamentos,
+    #content-servicios {
+        padding: 10px;
+    }
+    
+    #logo-footer {
+        margin-bottom: 10px;
+    }
+    
+    #menu-footer {
+        margin-bottom: 10px;
+    }
+    
+    #iconos {
+        margin-bottom: 10px;
+    }
+}
+

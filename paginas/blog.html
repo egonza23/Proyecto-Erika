@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mi Blog</title>
+  <link rel="stylesheet" type="text/css" href="../Style.css">
+  <link rel="stylesheet" type="text/css" href="../mediaqueries.css">
+
+  <script>
+    function menuItemClicked(event) {
+      event.preventDefault();
+      var menuItemText = event.target.textContent;
+      switch (menuItemText) {
+        case 'Inicio':
+          window.location.href = '../index.html#inicio';
+          break;
+        case 'Nosotros':
+          window.location.href = '../index.html#nosotros';
+          break;
+        case 'Medicamentos':
+          window.location.href = '../index.html#medicamentos';
+          break;
+        case 'Servicios':
+          window.location.href = '../index.html#servicios';
+          break;
+          case 'Contactos':
+          window.location.href = 'paginas/contactos.html#contactos';
+          break;
+          case 'Blog':
+          window.location.href = 'paginas/blog.html#contactos';
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+
+
+</head>
+
+<header>
+  <div id="logo">
+    <img src="../Imagenes/logo-blanco.png" alt="logo" width="5%">
+  </div>
+  <div id="menu1">
+    <nav>
+      <ul>
+        <li><a href="../index.html" onclick="menuItemClicked(event)">Inicio</a></li>
+        <li><a href="info-nosotros" onclick="menuItemClicked(event)">Nosotros</a></li>
+        <li><a href="content-medicamentos" onclick="menuItemClicked(event)">Medicamentos</a></li>
+        <li><a href="content-servicios" onclick="menuItemClicked(event)">Servicios</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div id="menu2">
+    <nav>
+      <ul>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="paginas/contactos.html" onclick="menuItemClicked(event)">Contactos</a></li>
+        <li><a href="#">Empleos</a></li>
+        <li><a href="paginas/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+<body>
+  <div class="container-blog">
+    <div class="row">
+      <div class="column">
+        <a href="https://www.ecologiaverde.com/boldo-para-que-sirve-propiedades-y-contraindicaciones-4189.html">
+          <img src="../Imagenes/boldo.jpg" alt="Imagen de referencia boldo" class="blog-image">
+          <h2>Los beneficios del té de boldo</h2>
+        </a>
+        <p>El boldo es una planta medicinal, una de las más recurrentes en la fitoterapia moderna, que se utiliza sobre
+          todo en remedios para el hígado. </p>
+      </div>
+      <div class="column">
+        <a href="https://www.healthline.com/health/es/beneficios-del-te-verde">
+          <img src="../Imagenes/te verde.jpg" alt="Imagen de referencia verde" class="blog-image">
+          <h2>Los beneficios del té de verde</h2>
+        </a>
+        <p>El té verde es la bebida más sana del planeta,está compuesto por muchos antioxidantes y nutrientes con
+          grandes efectos sobre el cuerpo.</p>
+      </div>
+      <div class="column">
+        <a href="https://www.cun.es/enfermedades-tratamientos/medicamentos/amoxicilina">
+          <img src="../Imagenes/AMOXICILINA.jpg" alt="Imagen de referencia amoxicilina" class="blog-image">
+          <h2>Historia de la amoxicilina</h2>
+        </a>
+        <p>La amoxicilina es un antibiótico que perteneciente al grupo de las penicilinas. Las penicilinas se utilizan
+          para tratar infecciones causadas por bacterias.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <a href="https://www.paho.org/es/informes-situacion-covid-19">
+          <img src="../Imagenes/covid.jpg" alt="Imagen de referencia COVID" class="blog-image">
+          <h2>El COVID en la actualidad</h2>
+        </a>
+        <p>ras el brote de una enfermedad por un nuevo coronavirus (COVID-19) que se produjo en Wuhan, una ciudad de la
+          provincia de Hubei, en China</p>
+      </div>
+      <div class="column">
+        <a href="https://www.mayoclinic.org/es-es/healthy-lifestyle/adult-health/in-depth/skin-care/art-20048237">
+          <img src="../Imagenes/limpieza-curacin.jpg" alt="Imagen de referencia herida" class="blog-image">
+          <h2>Importancia de curar una herida</h2>
+        </a>
+        <p>¿No tienes tiempo para el cuidado intensivo de la piel? Todavía puedes mimarte siguiendo los conceptos
+          básicos.</p>
+      </div>
+      <div class="column">
+        <a
+          href="https://www.paho.org/es/temas/lactancia-materna-alimentacion-complementaria#:~:text=La%20lactancia%20materna%20ayuda%20a,diabetes%20tipo%202%20en%2035%25.">
+          <img src="../Imagenes/materna.jpg" alt="Imagen de referencia leche materna" class="blog-image">
+          <h2>Beneficios de la leche materna</h2>
+        </a>
+        <p>Además de brindar la nutrición perfecta y protección contra infecciones y muerte, los componentes de la leche
+          materna ...</p>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div id="logo-footer">
+    <img src="../Imagenes/logo-blanco.png" alt="logo" width="10%">
+  </div>
+  <div id="menu-footer">
+    <nav>
+      <ul>
+        <li><a href="../index.html" onclick="menuItemClicked(event)">Inicio</a></li>
+        <li><a href="info-nosotros" onclick="menuItemClicked(event)">Nosotros</a></li>
+        <li><a href="content-medicamentos" onclick="menuItemClicked(event)">Medicamentos</a></li>
+        <li><a href="content-servicios" onclick="menuItemClicked(event)">Servicios</a></li>
+        <li><a href="paginas/contactos.html" onclick="menuItemClicked(event)">Contactos</a></li>
+        <li><a href="#">Empleos</a></li>
+        <li><a href="paginas/blog.html" onclick="menuItemClicked(event)">Blog</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <div id="iconos">
+    <nav>
+        <ul class="button-iconos">
+            <li><a href="contactos.html"><img src="../Imagenes/ubicacionblanco.png" class="button" alt="facebook"
+                        width="20%"></a></li>
+            <li><a href="https://es-la.facebook.com/"><img src="../Imagenes/relojblanco.png" class="button"
+                        alt="facebook" width="20%"></a></li>
+            <li><a href="contactos.html"><img src="../Imagenes/celblanco.png" class="button" alt="telefono"
+                        width="20%"></a></li>
+            <li><a href="https://es-la.facebook.com/"><img src="../Imagenes/facebookblanco.png" class="button"
+                        alt="facebook" width="20%"></a></li>
+            <li><a href="https://twitter.com/?lang=es"><img src="../Imagenes/twitterblanco.png" class="button"
+                        alt="twitter" width="20%"></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/"><img src="../Imagenes/instablanco.png"
+                        class="button" alt="instagran" width="20%"></a></li>
+    </nav>
+    </ul>
+</div>
+
+
+  <div id="autor">
+    <h3> ©Todos los derechos reservados 2023</h3>
+  </div>
+</footer>
+
+
+
+</html>
